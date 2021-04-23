@@ -18,7 +18,6 @@ public class MainActivity extends AppCompatActivity {
         super.onStart();
 
         Intent intent = new Intent(this, IBeaconAdvertiserJobIntentService.class);
-        //IBeaconAdvertiserJobIntentService.enqueueWork(this,intent);
         this.startService(intent);
         IBeaconAdvertiserJobIntentService.enqueueWork(this,intent);
     }

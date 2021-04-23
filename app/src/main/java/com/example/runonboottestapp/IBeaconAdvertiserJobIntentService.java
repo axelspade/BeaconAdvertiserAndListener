@@ -105,47 +105,6 @@ public class IBeaconAdvertiserJobIntentService extends JobIntentService {
         return advertisingSettingBuilder.build();
     }
 
-//    @Override
-//    public void onDestroy() {
-//        Toast.makeText(this, "onDestroy", Toast.LENGTH_LONG).show();
-//        super.onDestroy();
-//
-//        Intent intent = new Intent(this, IBeaconAdvertiserJobIntentService.class);
-//        //IBeaconAdvertiserJobIntentService.enqueueWork(this,intent);
-//        this.startService(intent);
-//        IBeaconAdvertiserJobIntentService.enqueueWork(this,intent);
-////        AlarmManager manager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
-////
-////        Intent intent = new Intent(this, BroadcastReceiverAdvertiser.class);
-////        PendingIntent wifiPendinfIntent = PendingIntent.getBroadcast(this, 1, intent, PendingIntent.FLAG_ONE_SHOT);
-////
-////        manager.set(AlarmManager.RTC_WAKEUP,
-////                System.currentTimeMillis() + 60000,
-////                wifiPendinfIntent);
-//    }
-//
-//    @Override
-//    public boolean onStopCurrentWork() {
-//        Toast.makeText(this, "onStopCurrentWork", Toast.LENGTH_LONG).show();
-//
-//        Intent intent = new Intent(this, IBeaconAdvertiserJobIntentService.class);
-//        //IBeaconAdvertiserJobIntentService.enqueueWork(this,intent);
-//        this.startService(intent);
-//        IBeaconAdvertiserJobIntentService.enqueueWork(this,intent);
-////        AlarmManager manager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
-////
-////        Intent intent = new Intent(this, BroadcastReceiverAdvertiser.class);
-////        PendingIntent wifiPendinfIntent = PendingIntent.getBroadcast(this, 1, intent, PendingIntent.FLAG_ONE_SHOT);
-////
-////        manager.set(AlarmManager.RTC_WAKEUP,
-////                System.currentTimeMillis() + 60000,
-////                wifiPendinfIntent);
-//
-//
-//        return super.onStopCurrentWork();
-//        //return false;
-//    }
-//
     @Override
     public void onTaskRemoved(Intent rootIntent) {
         Toast.makeText(this, "TaskRemoved", Toast.LENGTH_LONG).show();

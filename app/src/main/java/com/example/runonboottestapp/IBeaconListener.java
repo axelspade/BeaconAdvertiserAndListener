@@ -87,9 +87,7 @@ public class IBeaconListener extends JobIntentService {
          */
 //        if (Constants.lastWifiCheck == true || Constants.lastEvent.equals("EXIT"))
 //            scanner.stopScan(callback);
-        if (Constants.lastEvent.equals("EXIT"))
-            scanner.stopScan(callback);
-    }
+         }
 
 //    private void logToDisplay(final String line) {
 //        EditText editText = (EditText) IBeaconListener.this.findViewById(R.id.rangingText);
